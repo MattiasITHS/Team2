@@ -30,9 +30,7 @@ User click on shop
      sleep           1
     click element    xpath://*[@id="full-container"]/navigation-footer/div/div
      sleep           1
-The recipie should added on Handla for antal dagar
-    wait until page contains element    xpath://*[@id="shop-for-days-container"]/ul/li
-    page should contain element     xpath://*[@id="shop-for-days-container"]/ul/li
+
 User is on the webpage Matglad
     page should contain     Matglad
 User is planning meal for today
@@ -51,15 +49,6 @@ User can see a list of ingredients
     page should contain element        id=shoppinglist-table
 
 *** Test Cases ***
-#User can add random recipie and see it on Handla for antal dagar
-#    [Documentation]     Recipie gets added to page Handla för antal dagar
-#    [Tags]              MAT-5
-
-#    Given User is on the webpage Matglad
-#    When User is adding a random recipie
-#    And User click on shop
-#    Then The recipie should added on Handla for antal dagar
-
 User can see a list of ingredients to shop
     [Documentation]     User can see list containing ingredients to shop
     [Tags]              MAT-4
