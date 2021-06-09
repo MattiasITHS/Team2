@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="changeanddeleteRecipe" tests="3" errors="0" failures="0" skipped="0" time="32.755">
+<testcase classname="changeanddeleteRecipe" name="User can access website" time="10.577">
+</testcase>
+<testcase classname="changeanddeleteRecipe" name="User can search for a prduct" time="10.801">
+</testcase>
+<testcase classname="changeanddeleteRecipe" name="User can search for a prduct" time="11.007">
+</testcase>
+</testsuite>
