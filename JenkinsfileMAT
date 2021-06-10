@@ -1,11 +1,6 @@
 pipeline {
     agent any
     stages {
-        stage('Checkout') {
-	    steps{
-		git 'https://github.com/MattiasITHS/Team2'
-	    }
-	}
         stage('Robot test') {
             steps {
                 bat 'robot --variable BROWSER:headlesschrome -d Tests/results/tests Tests'
@@ -16,7 +11,7 @@ pipeline {
                           step(
                                 [
                                   $class              : 'RobotPublisher',
-                                  outputPath          : 'Robot_tests/Results',
+                                  outputPath          : 'Tests/results/tests',
                                   outputFileName      : '**/output.xml',
                                   reportFileName      : '**/report.html',
                                   logFileName         : '**/log.html',
